@@ -22,7 +22,7 @@ for _, row in ref_df.iterrows():
 
     theta = np.load(f"data/h2/thetas/{name}_theta_opt.npy")
     n_qubits = count_qubits(qham)
-    ansatz = make_ansatz(n_qubits, reps=2)
+    ansatz = make_ansatz(n_qubits, reps=4)
     op = qubitop_to_sparsepauliop(qham, n_qubits)
 
     noise_model = make_noise_model(p1=2e-4, p2=2e-3, p_readout=0.01)

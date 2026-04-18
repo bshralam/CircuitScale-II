@@ -19,7 +19,7 @@ for _, row in ref_df.iterrows():
         qham = pickle.load(f)
 
     n_qubits = count_qubits(qham)
-    ansatz = make_ansatz(n_qubits, reps=2)
+    ansatz = make_ansatz(n_qubits, reps=4)
     op = qubitop_to_sparsepauliop(qham, n_qubits)
 
     E_ideal, raw = run_vqe_ideal(op, ansatz, maxiter=250, seed=7)
