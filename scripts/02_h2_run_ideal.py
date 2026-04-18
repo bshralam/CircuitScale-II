@@ -23,7 +23,7 @@ for _, row in ref_df.iterrows():
     op = qubitop_to_sparsepauliop(qham, n_qubits)
 
     E_ideal, raw = run_vqe_ideal(op, ansatz, maxiter=250, seed=7)
-    np.save(theta_dir / f"{name}_theta_opt.npy", raw.optimal_point)
+    np.save(theta_dir / f"{name}_theta_opt.npy", raw.x)
 
     rows.append({
         "name": name,

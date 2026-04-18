@@ -1,0 +1,12 @@
+numpy
+scipy
+pandas
+matplotlib
+pyscf
+openfermion
+openfermionpyscf
+qiskit
+qiskit-aer
+qiskit-algorithms
+jupyter
+ipykernel
