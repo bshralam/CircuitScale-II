@@ -1,0 +1,19 @@
+Code structure and Results Overview
+
+1) Folder: src
+*systems.py
+*ansatze.py
+*vqe_ideal.py
+*vqe_noisy.py
+*noise.py
+*mitigation.py
+*analysis.py
+*chemistry.py
+*config.py
+*measurements.py
+
+2) Folder: scripts 
+*01_h2_generate_refs.py
+*02_h2_run_ideal.py 
+*03_h2_run_noisy_scan.py
+*04_h2_plot_results.py
