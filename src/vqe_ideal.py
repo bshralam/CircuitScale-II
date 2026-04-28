@@ -26,8 +26,8 @@ def energy_statevector(theta, ansatz, operator: SparsePauliOp) -> float:
 
 def run_vqe_ideal(operator: SparsePauliOp, ansatz, maxiter: int = 200, seed: int = 7):
     rng = np.random.default_rng(seed)
-    x0 = np.zeros(ansatz.num_parameters)
-
+    #x0 = np.zeros(ansatz.num_parameters)
+    x0 = 0.05 * rng.standard_normal(ansatz.num_parameters)
     res = minimize(
         lambda x: energy_statevector(x, ansatz, operator),
         x0=x0,
