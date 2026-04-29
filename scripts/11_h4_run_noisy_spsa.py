@@ -62,7 +62,7 @@ for name in targets:
     best_theta, best_E, trace = spsa_optimize(
         energy_fn=energy_fn,
         theta0=theta0,
-        n_iter=10,
+        n_iter=20,
         a=0.008,
         c=0.02,
         alpha=0.602,
